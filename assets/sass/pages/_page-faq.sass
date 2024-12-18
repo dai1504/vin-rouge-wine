@@ -1,0 +1,19 @@
+.faq-section
+    padding: size-pc(80,rem)
+    .accordion-button
+        font-weight: $font-semibold
+        &:not(.collapsed)
+            background-color: $color-primary
+            color: #fff
+        &::after
+            content: "\f107"
+            font-family: "Font Awesome 6 Pro"
+            font-weight: 900
+            background-image: unset
+            transform-origin: center
+            transform-box: fill-box
+            text-align: center
+    .accordion-body
+        a 
+            color: $color-primary
+            word-break: break-all

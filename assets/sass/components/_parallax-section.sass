@@ -1,0 +1,89 @@
+.bg-section 
+    position: relative
+    padding: 0
+    .el-3 
+        position: absolute
+        bottom: -10%
+        right: 0%
+        width: 25%
+        max-width: size-pc(250, rem)
+        // opacity: 1
+    .social-list
+        color: #fff
+        display: flex
+        flex-wrap: wrap
+        margin-bottom: size-pc(50, rem)
+        li 
+            a
+                color: #fff
+                &:hover 
+                    color: $color-2
+    figure
+        &.has-parallax 
+            overflow: hidden
+            // height: 100vh
+            min-height: 60vh
+            margin: 0
+            position: relative
+            display: block
+    .has-parallax
+        background-color: #655343
+        .el-1,.el-2
+            position: absolute
+        .el-1
+            top: 0
+            left: 0
+            width: 30%
+            max-width: size-pc(300, rem)
+        .el-2 
+            right: 0
+            bottom: 0
+            width: 35%
+            max-width: size-pc(340, rem)
+        > img 
+            filter: brightness(80%)
+        // mix-blend-mode: multiply
+
+.has-parallax-content,.has-parallax 
+    > img
+        width: 100%
+        height: 100%
+        max-width: 100%
+        position: absolute
+        display: block
+        object-position: center
+        object-fit: cover
+  
+.parallax-image-content
+    position: relative
+    margin: 0 auto
+    z-index: 10
+    height: 100%
+    width: 100%
+    box-sizing: border-box
+    display: flex
+    align-items: center
+    justify-content: center
+    .outer
+        width: 100%
+        margin: 0 auto
+        padding-top: size-pc(200, rem)
+        padding-bottom: size-pc(200, rem)
+        box-sizing: border-box
+        display: table
+        width: 100%
+        height: 100%
+    .inner 
+        display: table-cell
+        vertical-align: middle
+        box-sizing: border-box
+    img 
+        width: 100%
+        max-width: 100%
+        height: auto
+        display: block
+	
+.rounded-borders
+    .parallax-image-content 
+        img
+            border-radius: 8px

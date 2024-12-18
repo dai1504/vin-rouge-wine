@@ -1,0 +1,243 @@
+.subpage
+    &-banner
+        position: relative
+        // min-height: 80vh
+        .curve 
+            position: absolute
+            bottom: 0
+            left: 0
+            width: 100%
+            z-index: 8
+            svg 
+                position: absolute
+                bottom: 0
+                left: 0
+                width: 100%
+                height: size-pc(140,rem)
+                @media screen and ( max-width: 767.8px )
+                    min-width: size-pc(800,rem)
+                    height: size-pc(100,rem)
+                path 
+                    fill: $color-bg
+                    
+        
+        .content
+            padding: size-pc(100,rem) 0 size-pc(100,rem)
+            position: relative
+            z-index: 3
+            .sub-title
+                color: #fff
+                font-family: $font-body
+                font-weight: 600
+                text-transform: uppercase
+                font-size: size-pc(18,rem)
+                margin-bottom: size-pc(40,rem)
+                a 
+                    color: #fff
+                span 
+                    margin: 0 20px
+                    &.page-current-title
+                        margin: 0
+                        color: $color-2
+            h1 
+                // font-size: size-pc(100,rem)
+                color: #fff
+                font-weight: $font-medium
+                font-size: size-pc(70,rem)
+                position: relative
+                @media screen and ( max-width: 1199.82px )
+                    font-size: size-pc(65, rem)
+                @media screen and ( max-width: 767.82px )
+                    font-size: size-pc(60, rem)
+                @media screen and ( max-width: 575.82px )
+                    font-size: size-pc(55, rem)
+                @media screen and ( max-width: 400.82px )
+                    font-size: size-pc(50, rem)
+        &-img
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            z-index: 1
+            &::after
+                opacity: 0.7
+                background: #353535
+                mix-blend-mode: multiply
+                width: 100%
+                height: 100%
+                position: absolute
+                top: 0
+                left: 0
+                z-index: 2
+                content: ''
+            img 
+                position: absolute
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                object-fit: cover
+                z-index: 1
+.subpage-banner 
+    padding: size-pc(220,rem) 0 size-pc(130,rem)
+    background-image: var(--bg-banner)
+    position: relative
+    background-size: cover
+    background-position: center
+    min-height: size-pc(550,rem)
+    display: flex
+    align-items: center
+    justify-content: center
+    .info-blog-detail
+        display: flex
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        z-index: 4
+        background-color: rgba($color-primary,0.8)
+        bottom: 0
+        .cate-blog
+            padding: 10px 15px
+            color: #fff
+            border-right: 1px solid $color-primary
+            border-bottom: 5px solid $color-primary
+            a
+                color: #fff
+                font-weight: 600
+                &:hover 
+                    color: $color-primary
+        .date-blog
+            font-weight: 600
+            background-color: $color-primary
+            color: #fff
+            padding: 10px 15px
+            border-bottom: 5px solid $color-primary
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        width: 100%
+        height: 100%
+        background-color: $color-primary
+        // mix-blend-mode: multiply
+        opacity: 0.4
+        z-index: 1
+    .page-title
+        position: relative
+        color: #fff
+        text-align: center
+        z-index: 4
+        h1 
+            color: #fff
+            text-transform: uppercase
+    .title-bg
+        position: absolute
+        width: 100%
+        height: 100%
+        align-items: center
+        display: flex
+        justify-content: center
+        color: transparent
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        background-image: var(--bg-banner)
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+        top: calc( 50% + size-pc(40,rem) )
+        left: 50%
+        text-align: center
+        white-space: nowrap
+        transform: translate(-50% ,-50%)
+        font-size: size-pc(200,rem)
+        filter: drop-shadow(5px 5px 15px rgba(#000,0.9))
+        font-weight: 900
+        z-index: 2
+        text-transform: uppercase
+        mix-blend-mode: multiply
+        opacity: 0.7
+        @media screen and ( max-width: 767.82px )
+            font-size: size-pc(140,rem)
+
+.form
+    &-section
+        padding: size-pc(150,rem) 0
+        background-color: #ebedf1
+        @media screen and ( max-width: 767.82px )
+            padding: size-pc(100,rem) 0
+    &-container 
+        
+        input,select,textarea
+            background-color: unset 
+            width: 100%
+            border: unset
+            border-bottom: 1px solid $color-2
+            padding: 10px
+            font-size: size-pc(24,rem)
+            &::placeholder
+                font-style: italic
+                color: #727272
+        select
+            padding: 10px 5px
+            font-style: italic
+            color: #727272
+// .list-contact
+//     max-width: size-pc(720, rem)
+    
+//     padding: size-pc(50, rem)
+//     position: relative
+//     background-size: cover
+//     border-radius: 10px 30px 10px 30px
+//     overflow: hidden
+//     width: 100%
+//     display: flex
+//     flex-direction: column
+//     margin-bottom: 0
+//     @media screen and ( max-width: 767.82px )
+//         margin-bottom: size-pc(50, rem)
+        
+//     &::before
+//         content: ""
+//         position: absolute
+//         top: 0
+//         left: 0
+//         width: 100%
+//         height: 100%
+//         background-color: #050505
+//         opacity: .6
+//     > * 
+//         position: relative
+//         z-index: 2
+//     h4 
+//         color: #fff
+//         font-family: $font-body
+//         font-size: size-pc(28, rem)
+//         margin-bottom: 5px
+//         margin-top: 15px
+//         font-weight: $font-bold
+//     h3 
+//         font-size: size-pc(40,rem)
+//         color: #fff
+//         margin-bottom: 5px
+//     li 
+//         color: #ffff
+//         font-weight: 400
+//         font-size: size-pc(24, rem)
+//         margin-bottom: 10px
+//         display: flex
+//         // align-items: center
+//         &:last-child
+//             margin-bottom: 0
+//         b 
+//             color: #fff
+//         i 
+//             flex: 0 0 14px
+//             color: #fff
+//             font-size: 18px
+//             margin-right: 10px
+//             margin-top: 6px
+//         a 
+//             color: #c6c6c6
+//             &:hover 
+//                 color: #fff

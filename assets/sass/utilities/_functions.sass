@@ -1,0 +1,6 @@
+@function size-pc($size, $unit)
+  $result: calc($size / $font_size_pc_default)
+  @return $result + $unit // $unit: rem, em,...
+@function size-sp($size, $unit)
+  $result: $size / $font_size_sp_default
+  @return $result + $unit // $unit: rem, em,...

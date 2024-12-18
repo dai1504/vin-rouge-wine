@@ -1,0 +1,89 @@
+.loading
+    &-container 
+        position: fixed
+        background: linear-gradient(30deg, $color-primary , #233754  , $color-primary) 
+        display: flex
+        justify-content: center
+        align-items: center
+        z-index: 999999
+        width: 100vw
+        height: 100vh
+        padding: 30px
+        svg 
+            width: 100%
+            overflow: unset
+            max-width: 500px
+            opacity: 0
+            .ld-ic-t
+                transform-box: content-box
+                transform-origin: bottom
+            .ld-number
+                *
+                    transform-box: content-box
+                    transform-origin: center
+            .ld-text-small 
+                *
+                    transform-box: content-box
+                    transform-origin: center
+#preload 
+    position: fixed
+    width: 100vw
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: 99999
+    pointer-events: none
+    .loadbar
+        width: 100%
+        height: 100%
+        background: rgba($color-3,0.8)
+        position: absolute
+        top: 0px
+        right: 0
+        overflow: hidden
+        z-index: 20
+    .logo
+        padding: 40px
+        max-width: size-pc(600,rem)
+        width: 100%
+        position: relative
+        z-index: 3
+        svg
+            position: relative
+            z-index: 3
+            width: 100%
+    .overlay
+        position: fixed
+        width: 100vw
+        height: 100vh
+        z-index: 2
+        display: flex
+    .bar
+        width: 10vw
+        height: 110vh
+        background: $color-3
+        border-radius: 0 0 100px 100px
+    .counter
+        font-family: $font-body
+        position: absolute
+        bottom: 0
+        right: 0
+        color: #292929
+        z-index: 104
+        font-size: size-pc(100,rem)
+        padding: size-pc(30,rem)
+        font-weight: $font-regular
+        line-height: 1
+        @media screen and ( max-width: 767.82px )
+            font-size: size-pc(80,rem)
+        @media screen and ( max-width: 575.82px )
+            font-size: size-pc(60,rem)
+            
+.no-loading 
+    #preload
+        .loadbar
+            display: none
+        .counter
+            display: none
+    

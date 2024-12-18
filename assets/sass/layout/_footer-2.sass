@@ -1,0 +1,144 @@
+.site-footer
+    background-color: $color-4
+    padding-top: size-pc(80,rem)
+    color: $color-text
+    background-image: url(../images/bg-footer.png)
+    background-repeat: no-repeat
+    background-position: bottom
+    background-size: auto size-pc(220, rem)
+    .top-footer 
+        a
+            color: $color-text
+        .logo
+            width: 100%
+            display: block
+            max-width: size-pc(350, rem)
+            // margin: auto
+            margin-bottom: size-pc(40, rem)
+            @media screen and ( max-width: 991.82px )
+                margin: auto
+                margin-bottom: size-pc(40, rem)
+            
+        p 
+            margin-bottom: size-pc(40, rem)
+            font-size: size-pc(20,rem)
+            @media screen and ( max-width: 991.82px )
+                text-align: center
+                
+        .list-social 
+            display: flex
+            margin-bottom: size-pc(40, rem)
+            li 
+                margin-right: 20px
+                a
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    border-radius: 100%
+                    background-color: $color-text
+                    width: size-pc(50, rem)
+                    height: size-pc(50, rem)
+                    color: $color-btn
+                    &:hover 
+                        background-color: $color-title 
+                        color: #fff
+        .social-list 
+            display: grid
+            grid-template-columns: auto auto auto auto
+            width: fit-content
+            li 
+                margin-right: 10px
+                margin-bottom: 10px!important
+                a
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    border-radius: 100%
+                    background-color: rgba(#766c54,0.2)
+                    width: size-pc(45, rem)
+                    height: size-pc(45, rem)
+                    color: rgba($color-text,0.8)
+                    
+                    &:hover 
+                        background-color: $color-primary
+                        color: #fff
+        .link-menu 
+            @media screen and ( max-width: 767.82px )
+                margin-bottom: 20px
+            ul 
+                li 
+                    margin-bottom: 5px
+                    
+                &:not(.social-list)
+                    i 
+                        color: $color-2
+                        width: 20px
+                    
+            h3 
+                font-size: size-pc(28,rem)
+                color: $color-title
+                font-family: $font-body
+                margin-bottom: 15px
+                text-transform: uppercase
+                border-bottom: 1px solid $color-2
+                padding-bottom: 10px
+                width: fit-content
+            a
+                font-size: size-pc(20, rem)
+                font-style: italic
+                &:hover 
+                    color: $color-2
+                
+    .bottom-footer 
+        margin-top: size-pc(70, rem)
+        border-top: 1px solid $color-2
+        padding: size-pc(30, rem) 0
+        p 
+            margin-bottom: 0
+            font-size: size-pc(18, rem)
+            span 
+                color: $color-2
+.subscribe
+    &-section 
+        background-color: #EAE3D9
+        padding: size-pc(100,rem) 0
+        @media screen and ( max-width: 767.82px )
+            padding: size-pc(60,rem) 0
+        .content 
+            @media screen and ( max-width: 767.82px )
+                margin-bottom: size-pc(20,rem)
+                text-align: center
+                
+            h2
+                margin-bottom: size-pc(20,rem)
+            p 
+                margin-bottom: 0
+    &-form 
+        .input-group 
+            display: flex
+            width: 100%
+            flex-wrap: nowrap
+            border-bottom: 1px solid $color-text
+            transition: all .3s ease
+            &:has(input:focus)
+                border-color: $color-primary
+        input 
+            background-color: unset
+            border: unset
+            padding: size-pc(15,rem) 0
+            width: 100%
+            &:focus
+                outline: none
+                box-shadow: unset
+        button 
+            background: unset
+            border: unset 
+            display: flex
+            align-items: center
+            transition: all .3s ease
+            i 
+                margin-left: 15px
+            &:hover 
+                background-color: $color-primary
+                color: #fff
+

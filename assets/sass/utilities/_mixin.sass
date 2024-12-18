@@ -1,0 +1,44 @@
+@mixin full()
+  @media (min-width: $design_pc_size+'px')
+    @content
+@mixin pc()
+  @media (max-width: $design_pc_size+'px') 
+    @content
+@mixin sp()
+  @media (max-width: 1023px)
+    @content
+@mixin placeholder()
+  &::-webkit-input-placeholder
+    @content
+  &::-moz-placeholder
+    @content
+  &:-ms-input-placeholder
+    @content
+  &:-moz-placeholder
+    @content
+
+@mixin thumb_img($pb, $ob-fit)
+  position: relative
+  padding-bottom: $pb
+  img
+    transition: all .3s ease
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    object-fit: $ob-fit
+  
+@mixin menu-style 
+  display: block
+  width: fit-content
+  text-align: center
+  color: #fff
+  text-transform: uppercase
+  text-align: center
+  margin: auto
+  padding: size-pc(20, rem) size-pc(0, rem)
+  font-weight: $font-semibold 
+  font-size: size-pc(24, rem)
+  &:hover 
+      color: $color-2

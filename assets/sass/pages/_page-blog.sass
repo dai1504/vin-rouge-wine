@@ -1,0 +1,183 @@
+.blog
+    &-section
+        padding: size-pc(100,rem) 0  size-pc(180,rem)
+        position: relative
+        overflow: hidden
+        @media screen and ( max-width: 767.82px )
+            padding: size-pc(60,rem) 0  size-pc(80,rem)
+    &-item 
+        display: flex
+        background-color: $color-4
+        background-image: url(../images/blog/bg-1.png)
+        border-radius: 10px
+        overflow: hidden
+        margin-bottom: size-pc(40,rem)
+        background-repeat: no-repeat
+        background-position: right bottom
+        background-size: auto 50%
+        &:last-child
+            margin-bottom: 0
+        &:nth-child(2n + 2)
+            background-image: url(../images/blog/bg-2.png)
+        &:nth-child(3n + 3)
+            background-image: url(../images/blog/bg-3.png)
+    &-card 
+        background-color: $color-4
+        background-repeat: no-repeat
+        background-position: right bottom
+        background-size: auto 30%
+        background-image: url(../images/blog/bg-1.png)
+        border-radius: 10px
+        overflow: hidden
+        margin-bottom: var(--bs-gutter-x)
+        &-img 
+            overflow: hidden
+            @include thumb-img(60%, cover)
+            display: block
+            width: 100%
+            &:hover 
+                img 
+                    transform: scale(1.05)
+        &-content
+            padding: size-pc(30,rem)
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            h3 
+                font-family: $font-body 
+                color: $color-title
+                font-size: size-pc(30,rem)
+                a
+                    color: inherit
+                    &:hover 
+                        color: $color-2
+        .blog 
+            &-info 
+                ul 
+                    display: flex
+                    padding-left: 0
+                    gap: 10px
+                    font-style: italic
+                    flex-direction: column
+                    margin-bottom: 10px
+            &-btn 
+                a 
+                    margin-top: size-pc(20,rem)
+    &-content 
+        padding: size-pc(30,rem)
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        h3 
+            font-family: $font-body 
+            color: $color-title
+            font-size: size-pc(30,rem)
+            a
+                color: inherit
+    &-img
+        position: relative
+        width: size-pc(230,rem)
+        // height: size-pc(230,rem)
+        display: flex
+        img 
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            object-fit: cover
+    &-info 
+        ul 
+            display: flex
+            padding-left: 0
+            gap: 10px
+            font-style: italic
+            flex-direction: column
+            i 
+                color: $color-6
+                margin-right: 5px
+    &-btn 
+        a
+            display: block
+            margin-top: size-pc(20,rem)
+            padding:  size-pc(10,rem) size-pc(0,rem)
+            width: fit-content
+            position: relative
+            color: $color-title
+            &::before
+                position: absolute
+                content: ''
+                top: 0
+                left: 0
+                height: 1px
+                width: 100%
+                background-color: $color-2
+                transition: all .3s ease
+            &::after 
+                height: 1px
+                width: 100%
+                background-color: $color-2
+                right: 0
+                bottom: 0
+                content: ''
+                position: absolute
+                transition: all .3s ease
+            &:hover 
+                &::before,&::after
+                    width: 50%
+    &-thumb-view
+        display: flex
+        width: 100%
+        position: relative
+        border-radius: 10px
+        overflow: hidden
+        @media screen and ( max-width: 991.82px )
+            padding-bottom: 100%
+            margin-top: size-pc(40,rem)
+            
+        img 
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &-navigation 
+        display: flex
+        margin: 0 -5px
+        .btn-nav 
+            margin: 0 5px
+            font-size: size-pc(50,rem)
+            transition: all .3s ease
+            &.swiper-button-disabled
+                opacity: 0.3
+                cursor: not-allowed
+            &:hover 
+                color: $color-primary
+    &-nav
+        ul
+            display: flex
+            margin: 0 -5px
+            margin-top: 30px
+            
+            li 
+                margin: 0 5px
+                &.active
+                    a 
+                        background-color: $color-2
+                        color: #fff
+                        border-color: $color-2
+
+                a
+                    width: size-pc(50,rem)
+                    height: size-pc(50,rem)
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    border: 1px solid $color-primary
+                    font-size: size-pc(20,rem)
+                    &:hover ,&.active
+                        background-color: $color-2
+                        color: #fff
+                        border-color: $color-2
+            

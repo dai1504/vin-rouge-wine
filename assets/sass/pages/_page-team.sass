@@ -1,0 +1,66 @@
+.swiper-team 
+    padding: 0 50px
+    .swiper-button-next,.swiper-button-prev 
+        color: $color-text
+        font-size: size-pc(30, rem)
+        &::after
+            font-size: size-pc(35, rem)
+.box-team
+    .thumb-img 
+        @include thumb-img(100%,cover)
+        // border: 5px solid #5BC2E7
+        border-radius: 50%
+        margin-bottom: 20px
+        overflow: hidden
+        img 
+            padding: 5%
+            margin: 3%
+            border-radius: 50%
+            border: 5px solid $color-text
+            outline: 5px solid $color-primary
+    .content 
+        text-align: center
+        .name
+            font-size: size-pc(28, rem)
+            margin-bottom: size-pc(10, rem)
+        p 
+            font-size: size-pc(22, rem)
+            opacity: 0.7
+.ceo-section
+    padding-top: size-pc(80, rem)
+    padding-bottom: size-pc(40, rem)
+    .thumb-img 
+        @include thumb-img(100%,cover)
+        overflow: hidden
+        border-radius: 50%
+        z-index: 1
+        @media screen and ( max-width: 767.82px )
+            margin-bottom: 30px
+            
+        img 
+            padding: 5%
+            margin: 3%
+            border-radius: 50%
+            border: 5px solid $color-text
+            outline: 5px solid $color-primary
+    .content
+        p 
+            column-count: 2
+            font-size: size-pc(22, rem)
+            @media screen and ( max-width: 575.82px )
+                column-count: 1
+            
+        .title 
+            text-align: right
+            padding: 0px 20px
+            .sign
+                font-family: $font-sign
+                font-size: size-pc(60, rem)
+                color: $color-primary
+            .job 
+                opacity: 0.7
+                color: $color-text
+                font-size: size-pc(24, rem)
+.team-section
+    padding-top: size-pc(40, rem)
+    padding-bottom: size-pc(80, rem)

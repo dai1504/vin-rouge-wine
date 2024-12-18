@@ -1,0 +1,471 @@
+.btn
+    display: block
+    padding: size-pc(14, rem) size-pc(40, rem)
+    border: 1px solid 
+    border-radius: size-pc(40, rem)
+    font-size: size-pc(21, rem)
+    font-weight: $font-medium
+    font-family: $font-link
+    background-color: $color-btn
+    color: #fff
+    border-color: $color-btn
+    transition: all .3s ease
+    white-space: nowrap
+    position: relative
+    overflow: hidden
+    // text-transform: uppercase
+    @media screen and ( max-width: 767.82px )
+        padding: size-pc(10, rem) size-pc(15, rem)
+    i 
+      margin-left: 8px
+    &:hover
+        color: #fff
+        border-color: $color-btn
+        
+    &-light
+        &-outline
+            background-color: transparent
+            border-color: #fff
+            color: #fff
+            &:hover 
+                background-color: $color-btn
+                color: #fff
+                border-color: $color-btn
+            &._hover-white
+              &:hover 
+                background-color: #fff
+                border-color: #fff
+                color: $color-text
+    &-dark
+        &-outline
+            background-color: transparent
+            border-color: $color-text
+            color: $color-text
+            &:hover 
+                background-color: $color-btn
+                color: #fff
+                border-color: $color-btn
+    &-circle 
+        border-radius: 100%
+        width: size-pc(150, rem)
+        height: size-pc(150, rem)
+        display: flex
+        align-items: center
+        justify-content: center
+        text-transform: uppercase
+        background-color: $color-2
+        border-color: $color-2
+        color: #fff
+        
+        &:before, &:after
+            background-color: $color-primary
+        &:hover 
+            transition-delay: .4s
+            // background-color: $color-primary
+            color: #fff
+            border-color: $color-primary
+    
+    &-site
+        width: fit-content
+        display: block
+        padding: size-pc(18, rem) size-pc(40, rem)
+        border: 1px solid 
+        border-radius: 10px
+        font-size: size-pc(22, rem)
+        background-color: $color-btn
+        color: #fff
+        border-color: $color-btn
+        transition: all .3s ease
+        white-space: nowrap
+        @media screen and ( max-width: 767.82px )
+          padding: size-pc(10, rem) size-pc(15, rem)
+        &:hover 
+            background-color: transparent
+            border-color: $color-btn
+            color: $color-btn
+           
+        i 
+            margin-left: 8px
+    &-white 
+        border-color: #fff
+        background-color: #fff
+        color: $color-text
+        &:hover
+            background-color: $color-btn
+            color: #fff
+            border-color: $color-btn
+    &-dark
+        border-color: $color-text
+        background-color: $color-text
+        color: #fff
+        &:hover
+            background-color: #fff
+            color: $color-text
+            border-color: $color-btn
+
+.link-read 
+    color: $color-btn
+    font-weight: 600
+    width: fit-content
+    position: relative
+    text-align: center
+    padding: 0 size-pc(40, rem) size-pc(20, rem)
+    span
+        display: block
+        position: absolute
+        bottom: 0
+        width: 100%
+        height: 1px 
+        left: 0
+        background-color: $color-btn
+        &::before,&::after
+            
+            content: ''
+            background-color: $color-btn
+            width: 11px
+            height: 10px
+            position: absolute
+            
+            top: 50%
+            transform: translateY(-50%)
+        &::before
+            clip-path: polygon(0 0, 0% 100%, 100% 50%)
+            left: 0
+        &::after
+            clip-path: polygon(100% 0, 100% 100%, 0 50%)
+            right: 0
+
+
+@-webkit-keyframes criss-cross-left
+  0%
+    left: -20px
+
+  50%
+    left: 50%
+    width: 20px
+    height: 20px
+
+  100%
+    left: 50%
+    width: 375px
+    height: 375px
+
+@keyframes criss-cross-left
+  0%
+    left: -20px
+
+  50%
+    left: 50%
+    width: 20px
+    height: 20px
+
+  100%
+    left: 50%
+    width: 375px
+    height: 375px
+
+@-webkit-keyframes criss-cross-right
+  0%
+    right: -20px
+
+  50%
+    right: 50%
+    width: 20px
+    height: 20px
+
+  100%
+    right: 50%
+    width: 375px
+    height: 375px
+
+@keyframes criss-cross-right
+  0%
+    right: -20px
+
+  50%
+    right: 50%
+    width: 20px
+    height: 20px
+
+  100%
+    right: 50%
+    width: 375px
+    height: 375px
+
+.btn-11
+  position: relative
+  color: #91cfc9
+
+  &:before, &:after
+    position: absolute
+    top: 50%
+    content: ""
+    width: 20px
+    height: 20px
+    background-color: #7dc7c0
+    border-radius: 50%
+
+  &:before
+    left: -20px
+    transform: translate(-50%, -50%)
+
+  &:after
+    right: -20px
+    transform: translate(50%, -50%)
+
+  &:hover
+    color: #dff1ef
+
+    &:before
+      -webkit-animation: criss-cross-left 0.8s both
+      animation: criss-cross-left 0.8s both
+      -webkit-animation-direction: alternate
+      animation-direction: alternate
+
+    &:after
+      -webkit-animation: criss-cross-right 0.8s both
+      animation: criss-cross-right 0.8s both
+      -webkit-animation-direction: alternate
+      animation-direction: alternate
+.clapat-button-wrap
+  display: flex
+  position: relative
+  justify-content: center
+  align-items: center
+  left: 0
+  right: 0
+  min-width: 100px
+  height: 60px
+
+  &.circle
+    min-width: 104px
+    height: 104px
+
+.text-align-center .clapat-button-wrap
+  margin: 0 auto
+
+.clapat-button
+  opacity: 1
+.button-box
+  width: fit-content
+.button-border
+  height: 50px
+  width: auto
+  border: solid 1px $color-3
+  background-color: $color-3
+  border-radius: 10px!important
+  cursor: pointer
+  font-size: size-pc(21, rem)
+  font-weight: 500
+  line-height: 50px
+  overflow: hidden
+  color: #111
+  text-align: center
+  -webkit-transition: border 0.2s ease-out
+  transition: border 0.2s ease-out
+  box-sizing: initial !important
+  a
+    color: #111
+  &:hover 
+    background-color: $color-2
+    border-color: $color-2
+    // a 
+    //   color: $color-3
+    span 
+      &::before
+        color: $color-3
+
+
+.light-content,.dark-section
+  .button-border
+    border: solid 1px #fff
+    background-color: #fff
+    &:hover 
+      background-color: $color-2
+      border-color: $color-2
+      // a 
+      //   color: $color-3
+      span 
+        &::before
+          color: $color-3
+    &.outline
+      border: solid 1px #fff
+      color: #fff
+      background-color: transparent
+      a 
+        color: #fff
+      span 
+        &::before
+          color: #fff
+      &:hover
+        border-color: $color-2
+        background-color: $color-2
+        span 
+          &::before
+            color: $color-3
+
+
+
+.light-content
+  
+
+  .light-section 
+    .button-border
+      border: solid 1px $color-text
+      background-color: $color-text
+
+    .button-border 
+      a
+        color: #fff
+      &.outline
+        border: solid 1px $color-text
+        background-color: transparent
+        a
+          color: $color-text
+
+.dark-section .button-border a
+  color: $color-text
+
+
+
+.button-border
+  transition: all .3s ease
+  &.rounded
+    --bs-border-radius: 50px
+    // border-radius: 30px
+
+  &.outline
+    border: solid 1px $color-text
+    color: $color-text
+    background-color: transparent
+
+
+.clapat-button 
+  a
+    position: relative
+    display: block
+    height: 100%
+    &:hover 
+      color: $color-2
+
+  &:hover 
+    .button-border 
+      span
+        transform: translateY(-100%)
+        transform-origin: 0% 0%
+
+
+.dark-content 
+  .light-section 
+    .button-border
+      a
+        color: #fff
+
+      &.outline 
+        a
+          color: $color-text
+
+.circle 
+  .button-border
+    border-radius: 100px
+    height: 100px
+    width: 100px
+
+.button-border 
+  span
+    position: relative
+    display: inline-block
+    -webkit-transition: -webkit-transform 0.2s
+    transition: transform 0.2s
+    width: auto
+    text-align: center
+    transform-origin: 100% 0%
+    padding: 0 40px
+
+    &::before
+      position: absolute
+      width: 100%
+      top: 100%
+      left: 0
+      content: attr(data-hover)
+      text-align: center
+
+  
+
+.clapat-button-wrap
+  &.circle
+    &:hover 
+      .button-border
+        border: solid 1px transparent
+
+    .button-border
+      input, a
+        height: 100px
+        width: 100px
+        line-height: 100px
+        text-align: center
+        padding: 0
+        font-size: 12px
+        cursor: pointer
+
+.button-wrap 
+  position: relative
+  cursor: pointer
+  top: 0px
+  pointer-events: initial
+  width: auto
+  display: table
+  display: flex
+  align-items: center
+  &::after
+    clear: both
+    content: ''
+    display: block
+  &:hover 
+    .button-text 
+      span 
+        transform: translateY(-100%)
+        transform-origin: 0% 0%
+.button-icon
+  height: 40px
+  width: 40px
+  color: $color-text
+  text-align: center
+  line-height: 40px
+  font-size: 18px
+  i 
+    height: 40px
+    line-height: 40px
+    width: 40px
+    text-align: center
+.icon-wrap
+  width: 40px
+  height: 40px
+  display: flex
+  position: relative
+  justify-content: center
+  align-items: center
+  float: left
+.button-text 
+  font-weight: 500
+  font-size: 14px
+  line-height: 30px
+  // margin: 25px 0
+  overflow: hidden
+  width: auto
+  padding: 0 10px 0 0
+  color: $color-text
+  transition: color 0.05s ease-in-out
+  span
+    position: relative
+    display: inline-block
+    transition: transform 0.2s
+    width: auto
+    text-align: center
+    transform-origin: 100% 0%
+    &::before 
+      position: absolute
+      width: auto
+      top: 100%
+      left: 0
+      content: attr(data-hover)

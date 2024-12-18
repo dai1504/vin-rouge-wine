@@ -1,0 +1,247 @@
+.about-banner
+    background-color: #EAE3D991
+    padding: size-pc(70,rem) 0 
+    @media screen and ( max-width: 767.82px ) 
+        padding: size-pc(30,rem) 0 
+    .content
+        margin-bottom: size-pc(50,rem)
+        &.__with-icon 
+            .title-icon
+                margin-bottom: size-pc(40,rem)
+    .box-video
+        position: relative
+        padding-bottom: 52.5%
+        video 
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            object-fit: cover
+
+.service
+    &-section 
+        padding: size-pc(100, rem) 0 size-pc(100, rem)
+        position: relative
+        overflow: hidden
+        z-index: 2
+        .el 
+            position: absolute
+            width: 60%
+            top: -20%
+            max-width: size-pc(700,rem)
+            z-index: -1
+            left: -20%
+            // opacity: 0.4
+        .why-section 
+            // background-color: rgba($color-primary,0.3)
+            margin-top: size-pc(80, rem)
+            &_button
+                .btn 
+                    margin-bottom: 0
+            &.fund-section
+                .why-section_swiper
+                    .swiper-wrapper 
+                        display: flex
+                        .swiper-slide 
+                            display: flex
+                .why-section_content 
+                    h4
+                        font-size: size-pc(8, rem)
+                .why-section_desc
+                    ul 
+                        li 
+                            margin-bottom: 10px
+                            display: flex
+                            align-items: center
+                            &::before
+                                content: "\f00c"
+                                font-family: "Font Awesome 5 Pro"
+                                font-weight: 300
+                                margin-right: 15px
+                .why-section_swiper
+                    &.swiper 
+                        .swiper-slide
+                            &.is-why-section
+                                max-width: size-pc(700, rem)
+                                height: auto
+                                // min-height: size-pc(500, rem)
+                                background-color: #30302f
+                                flex-direction: column
+                                justify-content: unset
+                                margin-right: 2.5em
+                                padding: size-pc(50, rem)
+                                display: flex
+                            &.is-why-section-title-slide 
+                                max-width: size-pc(600, rem)
+                                height: auto
+                                // min-height: size-pc(500, rem)
+                                flex-direction: column
+                                justify-content: space-between
+                                align-items: flex-start
+                                margin-right: size-pc(120, rem)
+                                display: flex
+            // .content
+            //     h5 
+            //         color: #fff
+            //         font-size: size-pc(8, rem)
+            //     h4 
+            //         color: $color-text
+            //         font-size: size-pc(6, rem)
+            //         line-height: 6
+            &_content 
+                h4 
+                    color: #fff
+                    position: relative
+                    margin-bottom: size-pc(30, rem)
+                    padding-bottom: size-pc(10, rem)
+                    font-size: size-pc(30, rem)
+                    &::after
+                        position: absolute
+                        top: 100%
+                        height: 1px 
+                        width: 100%
+                        background-color: #fff
+                        content: ''
+                        left: 0
+            &_number 
+                h3 
+                    font-family: $font-body
+                    color: #ffff
+                    font-size: size-pc(30, rem)
+                    line-height: 1.3
+            &_desc 
+                p 
+                    margin-bottom: 0
+                    color: #ffff
+                    opacity: 0.8
+                    font-size: size-pc(22, rem)
+            &_nav
+                flex-direction: row
+                align-items: center
+                margin-top: 3.13em
+                display: flex
+                margin-bottom: 0
+                .dif_arrow-wrap 
+                    align-items: center
+                    font-size: 1rem
+                    display: flex
+                    
+                .dif_arrow
+                    margin-right: 1.63em
+                    transition: transform .2s
+                    color: $color-text
+                    &.swiper-button-disabled
+                        opacity: 0.4
+                        pointer-events: none
+                .dif_arrow-embed
+                    width: 1.88em
+                    height: 1.4em
+                &-bg 
+                    width: 100%
+                    height: 2px
+                    background-color: rgba(#8B6448, .36)
+                    position: relative
+                    overflow: hidden
+                &-fill
+                    width: 0%
+                    height: 100%
+                    background-color: #8B6448
+                    padding-right: 5.63em
+                    @media screen and ( max-width: 767.82px )
+                        padding-right: 20%
+                .why-section_p 
+                    white-space: nowrap
+                    padding-left: 1.8em
+                    font-size: 1em
+                    margin-bottom: 0
+            &_swiper
+                &.swiper 
+                    overflow: visible
+                    .swiper-slide
+                        &.is-why-section
+                            max-width: size-pc(600, rem)
+                            height: auto
+                            // min-height: size-pc(500, rem)
+                            background-color: #30302f
+                            flex-direction: column
+                            // justify-content: space-between
+                            margin-right: 2.5em
+                            padding: size-pc(50, rem)
+                            display: flex
+                        &.is-why-section-title-slide 
+                            max-width: size-pc(600, rem)
+                            height: auto
+                            // min-height: size-pc(500, rem)
+                            flex-direction: column
+                            // justify-content: space-between
+                            align-items: flex-start
+                            margin-right: size-pc(120, rem)
+                            display: flex
+
+.cta
+    &-section
+        display: flex
+        align-items: center
+        position: relative
+        padding: size-pc(120, rem) 0
+        .content 
+            h2 
+                // color: #fff
+        .bg
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            z-index: 1
+            &::after
+                position: absolute
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                content: ''
+                background-color: rgba(#F9F7F4,0.7)
+            img
+                position: absolute
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                object-fit: cover
+                transition: unset
+        .container 
+            z-index: 2
+.content-img-section
+    padding: size-pc(100, rem) 0
+    position: relative
+    @media screen and ( max-width: 767.82px )
+        padding: size-pc(50,rem) 0 
+    .el
+        position: absolute
+        max-width: size-pc(1000, rem)
+        width: 90%
+        top: 50%
+        left: 50%
+        transform: translate(-50% , -50%)
+    .content
+        padding: size-pc(80, rem)
+        @media screen and ( max-width: 767.82px )
+            padding: size-pc(30, rem) 0 0
+    .thumb-img 
+        @include thumb-img(80%,cover)
+        overflow: hidden
+        img 
+            width: 120%
+            height: 120%
+            transition: unset
+    .row 
+        &:nth-child(1)
+            .thumb-img 
+                @media screen and ( min-width: 768px )
+                    margin-left: -13%
+        &:nth-child(2)
+            .thumb-img 
+                @media screen and ( min-width: 768px )
+                    margin-right: -13%

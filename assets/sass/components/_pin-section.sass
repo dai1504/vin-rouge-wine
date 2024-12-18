@@ -1,0 +1,124 @@
+.pinned-section
+  position: relative
+  display: table !important
+  width: 100%
+  margin: 0 auto
+  max-width: 1200px
+
+.full .pinned-section, .full_elementor .pinned-section
+  max-width: 100%
+
+.pinned-section .pin-spacer
+  width: 50% !important
+
+.pinned-element
+  position: relative
+  display: block
+  height: auto
+  float: left
+  width: 50%
+  margin: 0
+  box-sizing: border-box
+  @media only screen and (max-width: 479px)
+    float: none
+    width: 100%
+    margin: 0
+  &.left
+    padding-right: 30px
+    @media only screen and (max-width: 479px)
+      padding-right: 0px
+  &.right
+    padding-left: 30px
+    @media only screen and (max-width: 479px)
+      padding-left: 0px
+.scrolling-element
+  position: relative
+  float: left
+  width: 50%
+  margin: 0
+  box-sizing: border-box
+  @media only screen and (max-width: 479px)
+    position: relative
+    float: none
+    width: 100%
+    margin: 0
+  &.left
+    padding-right: 30px
+    @media only screen and (max-width: 479px)
+      padding-right: 0px
+      margin-bottom: 40px
+
+  &.right
+    padding-left: 30px
+    @media only screen and (max-width: 479px)
+      padding-left: 0
+
+  img
+    display: block
+    height: auto
+    width: 100%
+.slowed-pin
+  position: relative
+  overflow: hidden
+
+  > .pin-spacer
+    pointer-events: none
+
+.slowed-text
+  position: absolute
+  height: auto
+  min-height: 100vh
+  width: 100%
+  max-width: 980px
+  display: flex
+  align-items: center
+  flex-direction: column
+  justify-content: center
+  box-sizing: border-box
+  padding: 8vw 20px
+  z-index: 1
+  pointer-events: none
+  margin: auto
+  left: 0
+  right: 0
+
+.slowed-text-wrapper
+  position: relative
+  display: block
+
+.slowed-images
+  position: relative
+  top: 0
+  width: 100%
+  height: auto
+  box-sizing: border-box
+  overflow: hidden
+  z-index: 0
+  margin: auto
+
+.slowed-image
+  position: relative
+  width: 100%
+  height: auto
+  box-sizing: border-box
+  padding: 0 0px
+  margin: 150px 0
+  display: flex
+  align-items: flex-start
+  flex-direction: column
+
+  &:nth-of-type(2n+2)
+    align-items: flex-end
+
+  img
+    width: auto
+    max-width: 40% !important
+    height: auto !important
+    display: block
+    cursor: pointer
+    margin-bottom: 10px
+    -webkit-transform: scale(0.95) translateY(30%)
+    transform: scale(0.95) translateY(30%)
+
+.rounded-borders .slowed-image img
+  border-radius: 8px

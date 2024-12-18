@@ -1,0 +1,112 @@
+.product 
+    &-section 
+        padding: size-pc(100,rem) 0
+        @media screen and ( max-width: 767.82px )
+            padding: size-pc(60,rem) 0
+    &-card 
+        &-btn 
+            display: flex
+            justify-content: center
+            gap: 5px
+            .product-pagination
+                width: fit-content
+                left: unset!important
+                transform: unset!important
+                display: flex
+                justify-content: center
+                align-items: center
+                .swiper-pagination-bullet
+                    background-color: $color-title
+                    flex: 0 0 8px
+                    height: 8px
+       
+
+        &-nav 
+            width: size-pc(60,rem)
+            height: size-pc(60,rem)
+            font-size: size-pc(30,rem)
+            border-radius: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            color: $color-title
+            border: 1px solid $color-text
+            transition: all .3s ease
+            &:hover 
+                background-color: $color-btn 
+                color: #fff
+        &-slide 
+            overflow: unset
+            .swiper-slide 
+                opacity: 0.5
+                transition: all .3s ease
+                &.swiper-slide-visible
+                    opacity: 1
+        &-item 
+            display: flex
+            background-color: $color-4
+            padding: size-pc(40,rem) size-pc(40,rem) size-pc(40,rem) size-pc(40,rem)
+            margin: 50px 0
+            border-radius: 10px
+        &-img 
+            margin: -50px 0
+            flex: 0 0 size-pc(100,rem)
+        &-content 
+            padding-left: size-pc(40,rem)
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            width: 100%
+        &-desc
+            h3 
+                color: $color-title
+                font-size: size-pc(35,rem)
+                margin-bottom: 0
+                font-family: $font-body
+                @media screen and ( max-width: 767.82px )
+                    font-size: size-pc(30,rem)
+                a 
+                    color: inherit
+            p 
+                color: $color-sub
+                font-style: italic
+                font-size: size-pc(24,rem)
+            
+        &-price 
+            display: flex
+            width: 100%
+            justify-content: space-between
+            align-items: flex-end
+            .pc-price
+                display: flex
+                flex-direction: column
+                .stock-status 
+                    color: $color-text
+                    font-style: italic
+                    font-size: size-pc(24,rem)
+
+                .price-text 
+                    color: $color-title
+                    font-size: size-pc(40,rem)
+                    @media screen and ( max-width: 767.82px )
+                        font-size: size-pc(35,rem)
+
+            .pc-action 
+                display: flex
+                button, a
+                    background-color: unset
+                    outline: unset
+                    border: 1px solid $color-text
+                    width: size-pc(60,rem)
+                    height: size-pc(60,rem)
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    font-size: size-pc(30,rem)
+                    color: $color-btn
+                    transition: all .3s ease
+                    &:last-child
+                        margin-left: -1px
+                    &:hover 
+                        background-color: $color-btn
+                        color: #fff

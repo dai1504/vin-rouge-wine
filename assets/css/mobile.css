@@ -1,0 +1,28 @@
+#main-page
+{
+    height: auto !important;
+    background-size: cover !important;
+}
+body{
+    overflow-x: hidden;
+}
+section
+{
+    overflow: hidden;
+}
+.blog-list
+{
+    grid-template: none;
+}
+#workshops .svg-group
+{
+    display: none;
+}
+.svg-group
+{
+    opacity: .5;
+}
+#footer .footer-c
+{
+    border-right: none !important;
+}
